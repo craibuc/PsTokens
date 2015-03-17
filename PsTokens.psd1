@@ -27,7 +27,7 @@
     Copyright = '(c) 2015 Craig Buchanan. All rights reserved.'
 
     # Description of the functionality provided by this module
-    Description = 'PowerShell token-replacement engine based on work by Brice Lambson (https://gist.github.com/bricelam/a5debdbfc495eb7b116c).'
+    Description = 'PowerShell token-replacement library, based on work by Brice Lambson (https://gist.github.com/bricelam/a5debdbfc495eb7b116c).'
 
     # Minimum version of the Windows PowerShell engine required by this module
     PowerShellVersion = '2.0'
