@@ -1,0 +1,7 @@
+@{
+  Id=9999; 
+  Title="Lorem ipsum dolor sit amet";
+  Foo=$null;
+  Author= @{Name="Craig Buchanan"; Email='craig.buchanan@choa.org'};
+  Analyst= @{Name="Tal Senior"; Email='tal.senior@choa.org'}
+}
