@@ -9,10 +9,10 @@
 @{
 
     # Script module or binary module file associated with this manifest
-    ModuleToProcess = ''
+    ModuleToProcess = 'PsTokens.psm1'
 
     # Version number of this module.
-    ModuleVersion = '0.1.0'
+    ModuleVersion = '0.0.1'
 
     # ID used to uniquely identify this module
     GUID = 'B91B8494-CCAF-11E4-A69A-23029EF54746'
@@ -63,7 +63,7 @@
     FormatsToProcess = @()
 
     # Modules to import as nested modules of the module specified in ModuleToProcess
-    NestedModules = 'PsTokens.psm1'
+    NestedModules = ''
 
     # Functions to export from this module
     FunctionsToExport = 'Merge-Tokens'
