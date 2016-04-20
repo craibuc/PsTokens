@@ -4,7 +4,7 @@ PowerShell token-replacement library.
 ## Usage
 
 ```powershell
-PS> $content = Get-Content .\template.txt | Merge-Tokens -tokens @{FirstName: 'foo'; LastName: 'bar'}
+PS> $content = Get-Content .\template.txt | Merge-Tokens -tokens @{'FirstName' = 'foo'; 'LastName' = 'bar'}
 ```
 
 ## Contributions
