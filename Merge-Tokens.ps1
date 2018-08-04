@@ -29,10 +29,10 @@ function Merge-Tokens() {
         [HashTable] $tokens
     ) 
 
-    begin { Write-Verbose "$($MyInvocation.MyCommand.Name)::Begin" }
+    # begin { Write-Debug "$($MyInvocation.MyCommand.Name)::Begin" }
 
     process {
-        Write-Verbose "$($MyInvocation.MyCommand.Name)::Process" 
+        # Write-Debug "$($MyInvocation.MyCommand.Name)::Process" 
 
         # adapted based on this Stackoverflow answer: http://stackoverflow.com/a/29041580/134367
         try {
@@ -64,7 +64,7 @@ function Merge-Tokens() {
 
     }
 
-    end { Write-Verbose "$($MyInvocation.MyCommand.Name)::End" }
+    # end { Write-Debug "$($MyInvocation.MyCommand.Name)::End" }
 
 } 
 
