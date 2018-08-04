@@ -12,7 +12,7 @@
     ModuleToProcess = 'PsTokens.psm1'
 
     # Version number of this module.
-    ModuleVersion = '0.0.1'
+    ModuleVersion = '0.0.2'
 
     # ID used to uniquely identify this module
     GUID = 'B91B8494-CCAF-11E4-A69A-23029EF54746'
