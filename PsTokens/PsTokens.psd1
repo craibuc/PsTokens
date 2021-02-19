@@ -9,10 +9,10 @@
 @{
 
     # Script module or binary module file associated with this manifest
-    ModuleToProcess = 'PsTokens.psm1'
+    PsMiller = 'PsTokens.psm1'
 
     # Version number of this module.
-    ModuleVersion = '0.0.2'
+    ModuleVersion = '0.0.3'
 
     # ID used to uniquely identify this module
     GUID = 'B91B8494-CCAF-11E4-A69A-23029EF54746'
@@ -21,16 +21,16 @@
     Author = 'Craig Buchanan'
 
     # Company or vendor of this module
-    CompanyName = ''
+    CompanyName = 'Cogniza, Inc.'
 
     # Copyright statement for this module
-    Copyright = '(c) 2015 Craig Buchanan. All rights reserved.'
+    Copyright = '(c) 2021 Cogniza, Inc. All rights reserved.'
 
     # Description of the functionality provided by this module
     Description = 'PowerShell token-replacement library, based on work by Brice Lambson (https://gist.github.com/bricelam/a5debdbfc495eb7b116c).'
 
     # Minimum version of the Windows PowerShell engine required by this module
-    PowerShellVersion = '2.0'
+    PowerShellVersion = '5.0'
 
     # Name of the Windows PowerShell host required by this module
     PowerShellHostName = ''
