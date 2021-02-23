@@ -42,6 +42,7 @@ function Merge-Tokens() {
     {
         try {
 
+            # configure delimiters
             if ($Delimiter.Count -eq 1)
             {
               $Front, $Rear = $Delimiter[0],$Delimiter[0]
@@ -55,28 +56,32 @@ function Merge-Tokens() {
               throw "Invalid delimiters: $( $Delimiter -join ',' )"
             }
 
+            # replace token with a value
             [regex]::Replace( $Template, "$Front(?<tokenName>[\w\.]+)$Rear", {
               # __TOKEN__
               param($match)
 
               $tokenName = $match.Groups['tokenName'].Value
-              Write-Debug $tokenName
+              Write-Debug "tokenName: $tokenName"
               
               $tokenValue = Invoke-Expression "`$Tokens.$tokenName"
-              Write-Debug $tokenValue
+              Write-Debug "tokenValue: $tokenValue"
 
-              if ($tokenValue) {
+              if ( $null -ne $tokenValue) 
+              {
                 # there was a value; return it
                 return $tokenValue
               } 
-              else {
+              else 
+              {
                 # non-matching token; return token
                 return $match
               }
             })
 
         }
-        catch {
+        catch 
+        {
             Write-Error $_
         }
 
